@@ -1,0 +1,21 @@
+//variables
+@import "../utilidades/variables";
+
+//mixin
+@import "../utilidades/mixin";
+
+/*sobre nosotros*/
+p{
+    color: $color-letra;
+   text-align: center;
+    }
+
+section{
+    @include style-section;
+ }
+  section img{
+   @include style-section-img;
+  }
+  section img:hover{
+    @include style-img-hover;
+  }

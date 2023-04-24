@@ -1,0 +1,215 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box; }
+
+/*estilos de home*/
+body {
+  background-color: #0e0d0d; }
+
+/* estilos header*/
+header {
+  background-color: #0e0d0d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  header .logo {
+    height: 10rem;
+    width: 20rem;
+    padding: 1rem; }
+
+/*estilos nav bt*/
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center; }
+  nav ul .menu-color {
+    color: whitesmoke; }
+  nav ul .menu-color:hover {
+    border-bottom: 2px solid #fb0909;
+    color: whitesmoke; }
+
+/*estilos del footer*/
+footer {
+  display: grid;
+  grid-template-columns: 56% 44%;
+  grid-template-rows: repeat(2, 50%);
+  margin-top: 50px; }
+  footer h3 {
+    color: whitesmoke;
+    font-size: small; }
+  footer .derechos {
+    grid-column: span 2;
+    text-align: center; }
+  footer .bc {
+    grid-column: span 1;
+    text-align: right;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem; }
+  footer .redes {
+    grid-column: 2/3;
+    padding-left: 0.5rem; }
+    footer .redes .l1 {
+      width: 1rem;
+      height: 1rem; }
+
+/*estilos del carousel*/
+.carrousel-inner {
+  height: 200px; }
+
+.my-carousel {
+  background-color: rgba(88, 3, 3, 0.3);
+  text-align: left;
+  left: 0;
+  top: 0;
+  padding: 30px 45px;
+  width: 340px;
+  height: 100%; }
+  .my-carousel h1 {
+    font-size: 26px;
+    line-height: 30px; }
+
+.my-carousel:hover {
+  border-bottom: 2px solid #fb0909;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 5, 5, 0.2), 0 4px 8px #0e0d0d; }
+
+.carousel-dos {
+  background-color: rgba(88, 3, 3, 0.3); }
+
+.carousel-dos:hover {
+  border-bottom: 2px solid #fb0909;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 5, 5, 0.2), 0 4px 8px #0e0d0d; }
+
+/*sobre nosotros*/
+p {
+  color: whitesmoke;
+  text-align: center; }
+
+section {
+  display: flex;
+  width: 95%;
+  height: 500px;
+  text-align: center; }
+
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease; }
+
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%); }
+
+/*estilos group-card*/
+.my-card {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; }
+
+.main-card {
+  display: inline-block;
+  text-align: center;
+  width: 18rem;
+  border-color: #fb0909; }
+
+.main-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 5, 5, 0.473), 0 4px 8px rgba(0, 0, 0, 0.06); }
+
+/*estilos de sedes*/
+.sedes {
+  color: whitesmoke;
+  text-align: center; }
+
+/*%contacto{
+    color: $color-letra;
+    text-align: center;
+}
+
+%contacto-ul{
+    list-style: none;
+    display: inline-block;
+}*/
+form p {
+  margin-top: 0;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 24px; }
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: whitesmoke;
+  font-size: 18px; }
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #222;
+  color: whitesmoke; }
+
+button[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #fb0909;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; }
+
+/*contactos*/
+form {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.form-group {
+  margin-bottom: 20px; }
+
+textarea {
+  height: 150px; }
+
+button[type="submit"]:hover {
+  background-color: #c80606; }
+
+/* mq de tablet */
+@media screen and (min-width: 600px) {
+  /*section sobre nosotros*/
+  section {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    text-align: center; } }
+
+/*mq pc */
+@media screen and (min-width: 1024px) {
+  /*ajustes de logo */
+  .logo {
+    height: 15rem;
+    width: 35rem;
+    padding: 1rem; }
+  /* ajustes del main */
+  .contenedor {
+    grid-template-columns: 4fr 1fr; }
+  /* ajustes del footer*/
+  footer {
+    grid-template-columns: 52.5% 47.5%; }
+  /*menu bt*/
+  .nav-bt {
+    margin-left: 353px; } }

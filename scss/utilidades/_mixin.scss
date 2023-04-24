@@ -1,0 +1,93 @@
+@import "../utilidades/variables";
+
+@mixin style-header{
+    background-color: $color-fondo;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin style-header-logo{
+    height: 10rem;
+    width: 20rem;
+    padding: 1rem;
+}
+
+@mixin style-nav{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+@mixin style-footer{
+    display: grid;
+    grid-template-columns: 56% 44%;
+    grid-template-rows: repeat(2, 50%);
+    margin-top: 50px;
+}
+
+@mixin style-footer-bc{
+    grid-column: span 1;
+    text-align: right;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+@mixin style-home-my-carousel{
+    background-color: $color-carousel;
+    text-align: left;
+    left: 0;
+    top: 0;
+    padding: 30px 45px;
+    width: 340px;
+    height: 100%;
+}
+
+@mixin style-home-carousel-hover{
+    border-bottom: 2px solid $color-secundario;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px $color-carousel-hover, 0 4px 8px $color-fondo;
+}
+
+//sobre nosotros
+
+@mixin style-section{
+    display: flex;
+    width: 95%;
+    height: 500px;
+    text-align: center;
+}
+
+@mixin style-section-img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+@mixin style-img-hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+//productos
+
+@mixin style-card{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@mixin style-card-dos{
+    display: inline-block;
+    text-align: center;  
+    width: 18rem;
+    border-color: $color-secundario;
+}

@@ -1,0 +1,44 @@
+//variables
+@import "../utilidades/variables";
+
+//extend 
+@import "../utilidades/extend";
+
+/*contactos*/
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+
+    p {
+        @extend %style-p;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+    label {
+        @extend %style-label;
+    }
+}
+
+input,
+textarea {
+    @extend %style-textarea;
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    @extend %style-button;
+}
+
+button[type="submit"]:hover {
+    background-color: $color-btn-dos;
+}
+
+
+

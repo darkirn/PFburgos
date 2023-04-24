@@ -1,0 +1,28 @@
+//variables
+@import "../utilidades/variables";
+
+//mixin
+@import "../utilidades/mixin";
+
+/*estilos group-card*/
+
+.my-card{
+    @include style-card;
+    
+}
+
+.main-card{
+   @include style-card-dos;
+}
+
+.main-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px $color-hover-card, 0 4px 8px $color-hover-card-dos;
+}
+
+
+
+
+
+
+

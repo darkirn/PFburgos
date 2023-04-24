@@ -1,0 +1,44 @@
+//variables
+@import "../utilidades/variables";
+
+//mixin
+@import "../utilidades/mixin";
+
+
+/*estilos del carousel*/
+.carrousel-inner{
+    height: 200px;
+    
+}
+
+.my-carousel {
+   @include style-home-my-carousel;
+
+    h1 {
+        font-size: 26px;
+        line-height: 30px;
+
+    }
+}
+
+
+.my-carousel:hover{
+   @include style-home-carousel-hover;
+}
+
+.carousel-dos{
+    background-color: $color-carousel;
+}
+
+.carousel-dos:hover{
+    @include style-home-carousel-hover;
+}
+
+  
+  
+ 
+  
+  
+  
+ 
+  

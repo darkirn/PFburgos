@@ -1,0 +1,42 @@
+/* mq de tablet */
+
+@media screen and (min-width:600px){
+    /*section sobre nosotros*/
+    section{
+      display: flex;
+      width: 100%;
+      height: 500px;
+      text-align: center;
+   }
+   
+  }
+  
+  /*mq pc */
+  
+  @media screen and (min-width:1024px) {
+  
+      /*ajustes de logo */
+      .logo {
+          height: 15rem;
+          width: 35rem;
+          padding: 1rem;
+      }
+  
+      /* ajustes del main */
+      .contenedor {
+          grid-template-columns: 4fr 1fr;
+  
+      }
+  
+      /* ajustes del footer*/
+  
+      footer {
+          grid-template-columns: 52.5% 47.5%;
+      }
+  
+      /*menu bt*/
+      .nav-bt{
+          margin-left: 353px;
+      }
+  
+  }

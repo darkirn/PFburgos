@@ -1,0 +1,15 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+//import
+@import "html/_estilos-gen";
+@import "html/home";
+@import "html/sobre-nosotros";
+@import "html/productos";
+@import "html/sedes";
+@import "html/contacto";
+@import "html/mediaq";
