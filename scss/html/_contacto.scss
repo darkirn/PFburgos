@@ -10,8 +10,13 @@ form {
     max-width: 500px;
     margin: 0 auto;
 
-    p {
-        @extend %style-p;
+    h1 {
+        @extend %style-h1;
+    }
+    
+    h2{
+        font-size: 18px;
+        color: $color-letra;
     }
 }
 

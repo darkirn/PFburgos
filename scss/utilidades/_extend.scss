@@ -1,17 +1,8 @@
 @import "../utilidades/variables";
 
-/*%contacto{
-    color: $color-letra;
-    text-align: center;
-}
-
-%contacto-ul{
-    list-style: none;
-    display: inline-block;
-}*/
 
 // estilos de contacto
-%style-p {
+%style-h1 {
     margin-top: 0;
     color: $color-letra;
     text-align: center;
@@ -46,3 +37,4 @@
     cursor: pointer;
     font-size: 16px;
 }
+

@@ -4,11 +4,36 @@
 //mixin
 @import "../utilidades/mixin";
 
+
 /*estilos group-card*/
 
-.my-card{
+.my-card {
     @include style-card;
-    
+
+    h1 {
+        @include style-prod;
+    }
+
+    h1:hover {
+        opacity: 0.8;
+        background-size: 100% 2px, auto;
+    }
+
+    .sub-hover {
+        display: grid;
+        place-content: center;
+    }
+
+    h2 {
+        @include style-prod;
+        font-size: 18px;
+    }
+
+    h2:hover{
+        opacity: 0.8;
+        background-size: 100% 2px, auto;
+    }
+
 }
 
 .main-card{

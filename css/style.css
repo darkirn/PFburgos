@@ -116,6 +116,40 @@ section img:hover {
   align-items: center;
   gap: 30px;
   flex-wrap: wrap; }
+  .my-card h1 {
+    font-size: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    text-align: center;
+    background-image: linear-gradient(#fb0909, #fb0909), linear-gradient(transparent, transparent);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: all 0.2s ease-out; }
+  .my-card h1:hover {
+    opacity: 0.8;
+    background-size: 100% 2px, auto; }
+  .my-card .sub-hover {
+    display: grid;
+    place-content: center; }
+  .my-card h2 {
+    font-size: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    text-align: center;
+    background-image: linear-gradient(#fb0909, #fb0909), linear-gradient(transparent, transparent);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: all 0.2s ease-out;
+    font-size: 18px; }
+  .my-card h2:hover {
+    opacity: 0.8;
+    background-size: 100% 2px, auto; }
 
 .main-card {
   display: inline-block;
@@ -132,16 +166,7 @@ section img:hover {
   color: whitesmoke;
   text-align: center; }
 
-/*%contacto{
-    color: $color-letra;
-    text-align: center;
-}
-
-%contacto-ul{
-    list-style: none;
-    display: inline-block;
-}*/
-form p {
+form h1 {
   margin-top: 0;
   color: whitesmoke;
   text-align: center;
@@ -178,6 +203,9 @@ button[type="submit"] {
 form {
   max-width: 500px;
   margin: 0 auto; }
+  form h2 {
+    font-size: 18px;
+    color: whitesmoke; }
 
 .form-group {
   margin-bottom: 20px; }
