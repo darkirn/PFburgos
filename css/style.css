@@ -85,24 +85,27 @@ footer {
   box-shadow: 0 10px 20px rgba(255, 5, 5, 0.2), 0 4px 8px #0e0d0d; }
 
 /*sobre nosotros*/
-p {
+div h1 {
   color: whitesmoke;
   text-align: center; }
 
-section {
-  display: flex;
-  width: 95%;
-  height: 500px;
+div p {
+  color: whitesmoke;
   text-align: center; }
 
-section img {
+.mq-section {
+  display: flex;
+  height: 500px;
+  gap: 4px; }
+
+.mq-section img {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
   opacity: .8;
   transition: .5s ease; }
 
-section img:hover {
+.mq-section img:hover {
   cursor: crosshair;
   width: 300px;
   opacity: 1;
@@ -166,39 +169,6 @@ section img:hover {
   color: whitesmoke;
   text-align: center; }
 
-form h1 {
-  margin-top: 0;
-  color: whitesmoke;
-  text-align: center;
-  font-size: 24px; }
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: whitesmoke;
-  font-size: 18px; }
-
-input,
-textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #222;
-  color: whitesmoke; }
-
-button[type="submit"] {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: #fb0909;
-  color: whitesmoke;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px; }
-
 /*contactos*/
 form {
   max-width: 500px;
@@ -241,3 +211,43 @@ button[type="submit"]:hover {
   /*menu bt*/
   .nav-bt {
     margin-left: 353px; } }
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  iframe {
+    width: 95vw; }
+  .mq-section {
+    display: flex;
+    flex-direction: column; } }
+
+form h1 {
+  margin-top: 0;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 24px; }
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: whitesmoke;
+  font-size: 18px; }
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #222;
+  color: whitesmoke; }
+
+button[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #fb0909;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; }

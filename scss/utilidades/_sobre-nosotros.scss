@@ -1,0 +1,25 @@
+/*sobre nosotros*/
+div {
+  h1 {
+    color: $color-letra;
+    text-align: center;
+  }
+
+  p {
+    color: $color-letra;
+    text-align: center;
+  }
+
+}
+
+.mq-section {
+  @include style-section;
+}
+
+.mq-section img {
+  @include style-section-img;
+}
+
+.mq-section img:hover {
+  @include style-img-hover;
+}

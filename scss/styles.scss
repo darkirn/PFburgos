@@ -1,15 +1,16 @@
-/*reset*/
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-}
 
 //import
-@import "html/_estilos-gen";
-@import "html/home";
-@import "html/sobre-nosotros";
-@import "html/productos";
-@import "html/sedes";
-@import "html/contacto";
-@import "html/mediaq";
+@import "../scss/utilidades/estilos-gen";
+@import "../scss/utilidades/home";
+@import "../scss/utilidades/sobre-nosotros";
+@import "../scss/utilidades/productos";
+@import "../scss/utilidades/sedes";
+@import "../scss/utilidades/contacto";
+@import "../scss/utilidades/mediaq";
+
+//variables
+@import "../scss/utilidades/variables";
+//mixin
+@import "../scss/utilidades/mixin";
+//extend
+@import "../scss/utilidades/extend";

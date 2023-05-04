@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +12,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- link favicon-->
     <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
-    <title>sobre nosotros</title>
+    <title>Sobre nosotros</title>
+    <meta name="description" content="describe como se trabaja en la empreza y a que esta dedicado el emprendimiento" />
+    <meta name="keywords" content="Testimonios de clientes, Preguntas frecuentes, Información de contacto" />
 </head>
-<meta name="description" content="describe como se trabaja en la empreza y a que esta dedicado el emprendimiento" />
-<meta name="keywords" content="Testimonios de clientes, Preguntas frecuentes, Información de contacto"/>
+
 <body>
     <!--el header esta por fuera del main aplica a toda la pag-->
     <header>
@@ -22,44 +24,45 @@
             alt="imagen del logo serpiente blanca con la descripcion y el nombre de la marca">
     </header>
 
-    <main>
-         <!-- menu bootstrap-->
-        <nav class="navbar navbar-expand-sm nav-bt">
-            <div class="container justify-content-center">
-                <a class="navbar-brand d-none d-sm-block" href="#">
+
+    <!-- menu bootstrap-->
+    <nav class="navbar navbar-expand-sm nav-bt">
+        <div class="container justify-content-center">
+            <a class="navbar-brand d-none d-sm-block" href="#">
+                <img src="../img/menuhamb.png" alt="imagen de una serpiente color plateada">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="">
                     <img src="../img/menuhamb.png" alt="imagen de una serpiente color plateada">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="">
-                        <img src="../img/menuhamb.png" alt="imagen de una serpiente color plateada">
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link menu-color text-center" aria-current="page" href="../index.html"> home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-color text-center" href="sobre-nosotros.html">sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-color text-center" href="productos.html">productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-color text-center" href="sedes.html">sedes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-color text-center" href="contactos.html">contactos</a>
-                        </li>
-                    </ul>
-                </div>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link menu-color text-center" aria-current="page" href="../index.html">
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-color text-center" href="sobre-nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-color text-center" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-color text-center" href="sedes.html">Sedes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-color text-center" href="contactos.html">Contactos</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        
-        <!--el main funciona como contenedor padre-->
-        
-        <p>
+        </div>
+    </nav>
+
+    <div>
+        <h1> Nuestra historia</h1>
+        <p class="p-2">
             En nuestra empresa, creemos que la moda es una forma de expresión y una herramienta para mostrar la
             personalidad
             y el estilo de cada individuo. Por esta razón, nos esforzamos en ofrecer prendas de vestir de alta calidad y
@@ -71,14 +74,14 @@
             nuestros
             clientes una experiencia de compra excepcional.
         </p>
-        
-        <section>
-            <img src="../img/gal-uno.jpg" alt="imagen de una persona lavando un pincel en un vaso de vidrio">
-            <img src="../img/gal-dos.jpg" alt="imagen de productos de pintura sobre una mesa">
-            <img src="../img/gal-tres.jpg" alt="imagen de muchos pinceles dentro de frascos">
-            <img src="../img/gal-cuatro.jpg" alt="imagen de una mujer pintando sobre una mesa">
-        </section>
-    </main>
+    </div>
+    <section class="mq-section">
+        <img src="../img/gal-uno.jpg" alt="imagen de una persona lavando un pincel en un vaso de vidrio">
+        <img src="../img/gal-dos.jpg" alt="imagen de productos de pintura sobre una mesa">
+        <img src="../img/gal-tres.jpg" alt="imagen de muchos pinceles dentro de frascos">
+        <img src="../img/gal-cuatro.jpg" alt="imagen de una mujer pintando sobre una mesa">
+    </section>
+
     <!-- el footer esta fuera del main porque aplica a todas las pag-->
     <footer>
         <h3 class="derechos">todos los derechos reservados </h3>
@@ -95,4 +98,5 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
